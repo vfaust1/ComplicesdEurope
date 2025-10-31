@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppariementManuelController">
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="20.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/images/Gemini_Generated_Image_v0daoxv0daoxv0da(1).jpeg" />
+               </image>
+            </ImageView>
+            <Label text="Appariement manuel">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="50.0">
+         <children>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="Etudiant visiteur" />
+                  <ComboBox fx:id="etudiantVisiteurComboBox" prefWidth="150.0" promptText="Choisir étudiant" />
+               </children>
+            </VBox>
+            <VBox spacing="5.0">
+               <children>
+                  <Label text="Etudiant hôte" />
+                  <ComboBox fx:id="etudiantHoteComboBox" prefWidth="150.0" promptText="Choisir étudiant" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleRetourButton" text="Retour" />
+            <Button mnemonicParsing="false" onAction="#handleApparierButton" text="Apparier" />
+            <Button mnemonicParsing="false" onAction="#handleModifierButton" text="Modifier" />
+         </children>
+      </HBox>
+   </children>
+</VBox> 

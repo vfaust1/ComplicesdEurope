@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: #f0f0f0; -fx-background-radius: 20; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DataManagementMenuController">
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/images/Gemini_Generated_Image_v0daoxv0daoxv0da(1).jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <Button fx:id="importButton" mnemonicParsing="false" onAction="#handleImportButton" prefHeight="50.0" prefWidth="250.0" text="Importer" />
+      <Button fx:id="historiqueButton" mnemonicParsing="false" onAction="#handleHistoriqueButton" prefHeight="50.0" prefWidth="250.0" text="Historique" />
+   </children>
+</VBox> 

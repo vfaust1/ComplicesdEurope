@@ -1,0 +1,7 @@
+.log
+*.out
+node_modules
+doc/
+.vscode
+.bin
+.ds_store
